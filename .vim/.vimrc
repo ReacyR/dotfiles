@@ -28,15 +28,18 @@ set number
 "Set relative line numbers
 set relativenumber
 
+"Show commands in editor when not in insert mode
+set showcmd
+
 "Turn on syntax highlighting
 syntax on
 "set termguicolors
 
 "set syntax highlighting for light backgrounds
-set bg=light
+"set bg=light
 
 "set syntax highlighting for dark backgrounds
-"set bg=dark
+set bg=dark
 
 "Make system clipboard the default clipboard register
 set clipboard=unnamed
