@@ -138,6 +138,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+#export go binaries to PATH and set GOPATH
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="${PATH}:$GOBIN"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

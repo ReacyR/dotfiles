@@ -45,8 +45,20 @@ set bg=dark
 set clipboard=unnamed
 
 "Set indentation rules for kivy design file(*.kv)
-"autocmd Filetype kv setlocal tabstop=4 shiftwidth=4 softtabstop=0 expandtab
-"filetype indent on
+"autocmd Filetype kv setlocal
+
+"Set tabs
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
+set expandtab
+
+"Set indent guide lines
+set listchars=tab:\|\ 
+set list
+
+"Enable filetype plugins
+"filetype plugin indent on
 
 "At vim statrup, vim will check current dir for vimrc. Allows for a custom vim
 "config specific to a particular project scope
@@ -57,7 +69,6 @@ set scrolloff=12
 
 "Add gutter for errors & such
 set signcolumn=yes
-
 
 "Turn off highlighting after done searching
 set nohlsearch
